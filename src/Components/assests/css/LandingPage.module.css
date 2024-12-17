@@ -1,27 +1,53 @@
-
-
-
 @font-face {
-    font-family: 'Elephant-font';
-    src: url('../font/ELEPHNT.TTF') format('TTF'),
+  font-family: 'Elephant-font';
+  src: url('../font/ELEPHNT.TTF') format('TTF'),
+}
+
+.login_link {
+  color: #f1788a;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  font-weight: bold;
+}
+
+.header_title {
+  font-size: 55px;
+  font-weight: bold;
+  color: black;
+}
+
+.header_title span {
+  font-family: "Elephant-font" !important;
+  text-transform: capitalize;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.header_subtitle {
+  color: rgba(113, 113, 132, 1);
+  margin-top: 15px;
+}
+
+
+@media screen and (max-width:992px) {
+  .landingPage__img {
+    display: none;
   }
-  .login_link {
-    color: #f1788a;
-    font-size: 14px;
-    text-decoration: none;
-    display: block;
-    font-weight: bold;
+}
+
+@media screen and (max-width:480px) {
+  .landingPage_content {
+    text-align: center;
   }
+
   .header_title {
-    font-size: 55px;
-    font-weight: bold;
-    color: #2C3E50;
+    font-size: 30px;
   }
-  .header_title span{
-    font-family: "Elephant-font",sans-serif !important;
+}
+
+@media screen and (max-width:480px) {
+  .header_title {
+    font-size: 25px;
   }
-  .header_subtitle {
-    color: rgba(113, 113, 132, 1);
-    margin-top: 15px;
-  }
-  
+}

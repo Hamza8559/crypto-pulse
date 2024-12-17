@@ -1,10 +1,10 @@
 
 .signUpContainer{
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
+    padding: 30px 0;
 }
 .headerContainer {
     padding: 20px;

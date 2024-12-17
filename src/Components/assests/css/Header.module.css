@@ -1,14 +1,14 @@
-
-.header{
+.header {
     margin-top: 20px;
 }
-.header .leftPart{
+
+.header .leftPart {
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
-.leftPart .menuBox ul{
+.leftPart .menuBox ul {
     list-style: none;
     display: flex;
     justify-content: center;
@@ -16,12 +16,134 @@
     padding: 0;
     margin: 0;
 }
-.leftPart .menuBox ul li a{
+
+.leftPart .menuBox ul li a {
     margin: 0 7px;
 }
-.leftPart .menuBox ul svg{}
-.header .rightPart{
+
+.header .rightPart {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: end;
+}
+
+/* ===================================================== */
+/* DROPDOWN CSS STYLE STARTS FROM HERE ================= */
+
+.leftPart .menuBox ul .Trade {
+    position: relative;
+}
+
+/* .leftPart .menuBox ul .Trade:hover .subMenuBox__one{opacity: 1;} */
+.leftPart .menuBox ul li .subMenuBox__one {
+    position: absolute;
+    background: white;
+    width: 209px;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-radius: 10px;
+    box-shadow: 3px -2px 11px -2px gray;
+    top: 60px;
+}
+
+.leftPart .menuBox ul li .subMenuBox__one li {
+    padding: 5px 9px;
+}
+
+.header .rightPart svg {
+    display: none;
+    background: #8080803d;
+    padding: 6px 7px;
+    height: 30px;
+    width: 31px;
+    border-radius: 5px;
+}
+
+.sideBar {
+    display: none;
+}
+
+@media screen and (max-width:1100px) {
+    .leftPart .menuBox {
+        display: none;
+    }
+
+    .colLeft {
+        max-width: unset;
+        width: 30%;
+    }
+
+    .colRight {
+        max-width: unset;
+        width: 70%;
+    }
+
+    .header .rightPart svg {
+        display: block;
+    }
+
+    .sideBar {
+        display: block;
+        background: #00000040;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    }
+    .sideBar svg.close_icon{
+        background: #8080803d;
+        padding: 2px 0px;
+        border-radius: 5px;
+        position: absolute;
+        right: 10px;
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    .sideBar .inner_sideBar {
+        background: white;
+        height: inherit;
+        position: fixed;
+        top: 0;
+        width: 250px;
+    }
+    .sideBar .inner_sideBar img{
+        margin-top: 50px;
+        padding: 0 11px;
+    }
+    .sideBar .inner_sideBar ul{
+        padding: 0;
+    }
+    .sideBar .inner_sideBar ul li {
+        list-style: none;
+        padding: 10px 10px;
+        border-bottom: 1px solid lightgray;
+    }
+    .sideBar .inner_sideBar ul li .mobile_subMenu {
+        display: flex;
+        flex-direction: column;
+        line-height: 2;
+    }
+    .sideBar .inner_sideBar ul li .mobile_subMenu li{
+        border-bottom: 1px solid lightgray;
+        padding: 0;
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .hiddenSign__In {
+        display: none;
+    }
+
+    .header .rightPart svg {
+        margin-left: 20px;
+    }
+}
+
+@media screen and (max-width:420px) {
+    .hiddenSign__Up {
+        display: none;
+    }
 }

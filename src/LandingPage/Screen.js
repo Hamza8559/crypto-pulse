@@ -11,7 +11,7 @@ function Screen() {
         <div className="container">
           <div className="row">
             <div className="col-lg-6">
-              <div>
+              <div className={style.landingPage_content}>
                 <a href="/login" className={`${style.login_link}`}>Sign In To Your Secure Wallet!</a>
                 <h1 className={`${style.header_title} mt-4`}>The next-gen <br /><span>crypto wallet &</span> <br /> trading platform</h1>
                 <p className={`${style.header_subtitle} mt-4`}>
@@ -21,7 +21,7 @@ function Screen() {
               </div>
             </div>
             <div className="col-lg-6">
-              <div>
+              <div className={style.landingPage__img}>
                 <img src={rightImgBanner} alt="" className='img-fluid'/>
               </div>
             </div>
