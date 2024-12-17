@@ -1,0 +1,98 @@
+.welcome_container {
+    text-align: center;
+    padding: 20px;
+    margin: 32px 0;
+    background-color: #f0f0f0;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.header p {
+    color: #666;
+    font-size: 16px;
+}
+
+.logo {
+    height: 35px;
+    margin-bottom: 20px;
+}
+
+/* ============================================ */
+.card_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 300px;
+    margin: 20px;
+    transition: transform 0.3s ease;
+    border: 1px solid lightgray;
+}
+
+.card_container:hover {
+    border-top-color: #f6797f;
+    border-right-color: #f6797f;
+    border-left-color: #0d99ff;
+    border-bottom-color: #0d99ff;
+}
+
+.card_icon img {
+    width: 100px;
+    height: auto;
+}
+
+.card_title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-top: 10px;
+}
+
+.card_subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+/* ============================================= */
+.Bottomcontainer {
+    text-align: center;
+    padding: 20px;
+}
+
+.mainText {
+    font-size: 16px;
+    color: #333;
+}
+
+.signUpLink {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.signUpLink:hover {
+    text-decoration: underline;
+   
+}
+
+.disclaimer {
+    font-size: 12px;
+    color: #666;
+    margin: 0;
+}

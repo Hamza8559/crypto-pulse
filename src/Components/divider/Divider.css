@@ -1,0 +1,14 @@
+.divider {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    line-height: 0.1em;
+    margin: 20px 0 20px;
+}
+
+.divider:before {
+    content: 'OR';
+    background: #fff;
+    color:gray;
+    padding: 0 10px;
+}

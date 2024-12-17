@@ -1,0 +1,27 @@
+
+.header{
+    margin-top: 20px;
+}
+.header .leftPart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.leftPart .menuBox ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+.leftPart .menuBox ul li a{
+    margin: 0 7px;
+}
+.leftPart .menuBox ul svg{}
+.header .rightPart{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

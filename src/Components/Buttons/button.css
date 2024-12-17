@@ -1,0 +1,23 @@
+.PrimaryButton{
+    background: #000;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.PrimaryButton a{
+    color: white;
+}
+.OutlineButton{
+    background: transparent;
+    padding: 10px 25px;
+}
+.OutlineButton a{
+    color: black;
+}
+.GetStarted{
+    background: #4f4ad8;
+    padding: 10px 25px;
+    border-radius: 30px;
+}
+.GetStarted a{
+    color: white;
+}
