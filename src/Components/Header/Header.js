@@ -30,7 +30,7 @@ function Header() {
                                         <li><Link to="">Buy Crypto</Link></li>
                                         <li><Link to="">Market</Link></li>
                                         <li onMouseEnter={() =>
-                                            setdropDowns(prevState => ({ ...prevState, one: true }))}>
+                                            setdropDowns(prevState => ({ ...prevState, one: true, two: false }))}>
                                             <Link to="">Trade <IoIosArrowDown /> </Link>
                                             {
                                                 dropDowns.one ?
@@ -47,7 +47,7 @@ function Header() {
 
                                         </li>
                                         <li onMouseEnter={() =>
-                                            setdropDowns(prevState => ({ ...prevState, two: true }))}>
+                                            setdropDowns(prevState => ({ ...prevState, two: true, one: false }))}>
                                             <Link to="">Future <IoIosArrowDown /></Link>
                                             {
                                                 dropDowns.two ?
@@ -66,7 +66,6 @@ function Header() {
                                 </div>
                             </div>
                         </div>
-                        {/* <div className="col-lg-2"></div> */}
                         <div className={`${style.colRight} col-lg-6`}>
                             <div className={`${style.rightPart}`}>
                                 <SearchBar />

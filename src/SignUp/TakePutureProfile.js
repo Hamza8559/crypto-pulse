@@ -43,7 +43,7 @@ export default function TakePutureProfile() {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <Next title={"Next"} link={"/TakePictureDocs"} styled={{ width: "100%", marginTop: "90px" }} />
+                                            <Next title={"Next"} link={"/"} styled={{ width: "100%", marginTop: "90px" }} />
                                             <div className={`${styles.Bottomcontainer}`}>
                                                 <p className={styles.disclaimer}>
                                                     By continuing, you agree to Cryptopulse Terms of Use and confirm that you have read Cryptopulse Privacy Policy
