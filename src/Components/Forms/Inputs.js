@@ -25,6 +25,28 @@ const NumberInput = ({ text, placeHolder, className }) => {
     )
 }
 
+const TextInput = ({ text, placeHolder, className }) => {
+    return (
+        <>
+            <div className={className + " " + 'emailInputBox'}>
+                <label>{text}</label>
+                <input type="text" placeholder={placeHolder} />
+            </div>
+        </>
+    )
+}
+
+const DateInput = ({ text, placeHolder, className }) => {
+    return (
+        <>
+            <div className={className + " " + 'emailInputBox'}>
+                <label>{text}</label>
+                <input type="date" placeholder={placeHolder} />
+            </div>
+        </>
+    )
+}
+
 const Password = ({ text1, placeHolder1,value1,onChange1,text2,placeHolder2,value2,onChange2,className }) => {
     const [isPasswordShow, setPasswordShow] = useState(false)
     const [isConPasswordShow, setConPasswordShow] = useState(false)
@@ -55,4 +77,4 @@ const Password = ({ text1, placeHolder1,value1,onChange1,text2,placeHolder2,valu
         </>
     )
 }
-export { EmailInput, NumberInput, Password };
+export { EmailInput, NumberInput, Password,TextInput,DateInput };

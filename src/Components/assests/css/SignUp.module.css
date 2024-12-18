@@ -180,3 +180,16 @@
     border-radius: 50%;
     background: linear-gradient(to bottom, #f6797f, #0d99ff);
 }
+
+/* =============================================================== */
+.points__ul li{
+    list-style: none;
+    color: rgba(113, 113, 132, 1);
+    font-size: 13px;
+    margin: 6px 0;
+}
+@media screen and (max-width:565px){
+    .points__ul{
+        padding: 0;
+    }
+}

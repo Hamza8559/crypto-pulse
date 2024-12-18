@@ -30,6 +30,7 @@ export default function SelectResidency() {
                                             </p>
                                             <label className={`${styles.ResidencyLabel}`}>Residency</label>
                                             <ReactFlagsSelect
+                                                className="ReactFlagsSelect"
                                                 selected={selected}
                                                 onSelect={(code) => setSelected(code)}
                                                 searchable={false}

@@ -2,11 +2,10 @@ import React, { useCallback, useEffect, useMemo, useState } from 'react'
 import styles from '../Components/assests/css/SignUp.module.css'
 import logo from '../Components/assests/images/Logo.png'
 import Next from '../Components/Buttons/Button'
-import idCard from '../Components/assests/images/icons/id-card.png'
-import document from '../Components/assests/images/icons/document-text.png'
-import passport from '../Components/assests/images/icons/passport.png'
+import camra from '../Components/assests/images/icons/Group14462.png'
+import document from '../Components/assests/images/icons/Group14461.png'
 
-export default function DocumentVerification() {
+export default function TakePutureProfile() {
     const [selectedDocument, setSelectedDocument] = useState('');
 
     return (
@@ -22,15 +21,14 @@ export default function DocumentVerification() {
                                             <img src={logo} alt="Cryptopulse Logo" className={styles.logo} />
                                             <h1 className={styles.title}>Document Verification</h1>
                                             <p className={styles.subtitle}>
-                                                Your ID document will be scanned for
-                                                personal data extraction.
+                                                Please select a way to complete document
+                                                verification.
                                             </p>
                                             <div className={styles.Docscontainer}>
-                                                <h2 className={styles.title}>Document Type</h2>
+                                                <h2 className={styles.title}>Upload Type</h2>
                                                 {[
-                                                    { id: 'idCard', name: 'ID Card', icon: idCard },
-                                                    { id: 'drivingLicense', name: 'Driving’s License', icon: document },
-                                                    { id: 'passport', name: 'Passport', icon: passport }
+                                                    { id: 'picture', name: 'Take picture with phone', icon: camra },
+                                                    { id: 'Uploadphotos', name: 'Upload photos', icon: document },
                                                 ].map((doc) => (
                                                     <div
                                                         key={doc.id}
@@ -45,7 +43,7 @@ export default function DocumentVerification() {
                                                     </div>
                                                 ))}
                                             </div>
-                                            <Next title={"Next"} link={"/TakePictureDocs"} styled={{ width: "100%", marginTop: "20px" }} />
+                                            <Next title={"Next"} link={"/TakePictureDocs"} styled={{ width: "100%", marginTop: "90px" }} />
                                             <div className={`${styles.Bottomcontainer}`}>
                                                 <p className={styles.disclaimer}>
                                                     By continuing, you agree to Cryptopulse Terms of Use and confirm that you have read Cryptopulse Privacy Policy

@@ -9,6 +9,9 @@ import SelectResidency from './SignUp/SelectResidency';
 import Nationality from './SignUp/Nationality';
 import DocumentVerification from './SignUp/DocumentVerification';
 import SignIn from './SignUp/SignIn';
+import HomeAddress from './SignUp/HomeAddress';
+import TakePictureDocs from './SignUp/TakePictureDocs';
+import TakePutureProfile from './SignUp/TakePutureProfile';
 export default function Routing() {
   return (
     <>
@@ -22,7 +25,10 @@ export default function Routing() {
                 <Route path="/VerifyEmail/CreatePassword" element={<CreatePassword />} />   
                 <Route path="/SelectResidency" element={<SelectResidency />} />       
                 <Route path="/Nationality" element={<Nationality />} />          
+                <Route path="/HomeAddress" element={<HomeAddress />} /> 
                 <Route path="/DocumentVerification" element={<DocumentVerification />} /> 
+                <Route path="/TakePictureDocs" element={<TakePictureDocs />} /> 
+                <Route path="/TakePutureProfile" element={<TakePutureProfile />} /> 
             </Routes>
         </Router>
     </>
